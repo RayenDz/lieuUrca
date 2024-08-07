@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ركـــاب عبدالقادر</title>
+    <style>
+        body {
+            background-color: #6495ED; /* لون أزرق */
+            color: white; /* لون النص */
+            font-family: Arial, sans-serif; /* خط النص */
+            padding: 20px;
+            margin: 0;
+            /* إزالة الخصائص الخاصة بـ flex إذا كنت قد أضفتها من الإرشادات السابقة */
+        }
+    
+        #search_form {
+            background-color: rgba(255, 255, 255, 0.2); /* لون أبيض مع شفافية */
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content; /* يجعل عرض الفورم يتناسب مع محتواه */
+            margin: 0 auto; /* تمركز الفورم أفقياً */
+        }
+    
+        #search_input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            width: 200px; /* يمكنك تعديل العرض حسب الحاجة */
+        }
+    
+        #search_input:focus {
+            outline: none;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: #333; /* لون أسود */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        button:hover {
+            background-color: #555; /* تغيير لون الخلفية عند تحويم الماوس */
+        }
+    
+        #search_results {
+            margin-top: 20px;
+        }
+    
+        h2 {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>تمت البرمجة من طرف ركاب عبدالقادر </h2>
+    <h2>البحــــث</h2>
+    <form id="search_form">
+       
+        <label for="search_input">البحث عن السطر:</label>
+        <input type="text" id="search_input" name="search_query">
+        <button type="submit">بحث</button>
+
+      
+        <button type="button" id="distance_button">المسافة</button>
+		<button type="button" id="distance2_button">البحث  المكان</button>
+        <button type="button" id="distance1_button">البحث بدون انترنت</button>
+		
+
+        
+
+    </form>
+
+    <div id="search_results">
+        <!-- ستتم عرض نتائج البحث هنا -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
